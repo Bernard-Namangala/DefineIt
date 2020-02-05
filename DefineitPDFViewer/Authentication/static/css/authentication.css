@@ -1,0 +1,139 @@
+:root {
+  --main-color: rgb(5, 83, 83);
+  --shadow: 0 1px 5px rgba(60, 100, 180, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #fff;
+}
+body {
+  background-color: #fff;
+  text-align: center;
+  line-height: 1.3rem;
+  padding-bottom: 1.5rem;
+}
+nav{
+background:var(--main-color);
+}
+#logo {
+  width: 180px;
+  height: auto;
+  background-image: url(../logos/homeloamps.png);
+  background-position: center;
+  background-size: cover;
+  padding: 1.7rem;
+  margin-top:-0.4rem;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#form {
+  display: grid;
+  color: #000;
+}
+.auth {
+  padding: 1.3rem 0.2rem;
+  box-shadow: 0 4px 10px rgb(75, 75, 75);
+  border-radius: 0.5rem;
+  background: #fff;
+}
+#form {
+  display: grid;
+  color: #000;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  margin-bottom: 1.2rem;
+  color: rgb(65, 68, 68);
+}
+
+.form-row input[type="text"],
+.form-row input[type="password"] {
+  width: 93%;
+  margin-bottom: 1rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-color);
+  color: #000;
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+  background: #fff;
+}
+.form-row button {
+  width: 40%;
+  height: 2.5rem;
+  border-radius: 0.8rem;
+  border: 0;
+  text-align: center;
+  font-size: 130%;
+  background-color: rgb(5, 83, 83);
+  color: #fff;
+}
+.form-row button:hover {
+  border: 1px solid rgb(80, 252, 131);
+  width: 42%;
+}
+.form-row p {
+  margin-top: 1.2rem;
+}
+.input-success {
+  border: 1px solid #3eff59;
+}
+
+.signup-errors {
+  margin-top: -10px;
+  color: red;
+  margin-bottom: 1rem;
+  box-sizing:border-box;
+  padding:0 1rem;
+}
+.errorlist{
+text-decoration:none;
+list-style:none;
+}
+a{
+text-decoration:underline;
+color:var(--main-color);
+}
+a:hover{
+font-size:18px;
+}
+.login-errors {
+  margin-top: -10px;
+  color: red;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 480px) {
+  .auth {
+    width: 27rem;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  .auth {
+    width: 95vw;
+  }
+  .form-row button {
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 479px) {
+  .auth {
+    width: 80vw;
+  }
+
+}

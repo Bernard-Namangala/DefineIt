@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html>-->
+{% extends 'base.html' %}
+{% load static %}
+{% block stylesheet%} <link rel="stylesheet" href="{% static 'css/account.css' %}"> {% endblock stylesheet %}
+{% block main-content %}
+    <div class="container">
+      <div class="row">
+        <div class="account-image-holder">
+          <img src="{% static 'images/itel.jpg' %}" />
+        </div>
+        <div class="name"><h2>{{user.first_name}} {{user.last_name}}</h2></div>
+        <div></div>
+      </div>
+      <div class="row">
+        <h3 class="heading">Contact info</h3>
+        <ul class="info-list">
+          <li class="info-list-item">
+            <span class="label">Email {% if user.email %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.email}}</span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">Phone {% if user.user_extension.phone %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.user_extension.phone}}</span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">Website {% if user.user_extension.website %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.user_extension.website}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 class="heading">Personal info</h3>
+        <ul class="info-list">
+          <li class="info-list-item">
+            <span class="label">First Name {% if user.first_name %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.first_name}} </span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">Last Name {% if user.last_name %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.last_name}}</span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">username <a href="#">edit</a></span>
+            <span class="value">{{user.username}}</span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">gender {% if user.user_extension.gender %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.user_extension.gender}}</span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">Company {% if user.user_extension.company %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.user_extension.company}}</span>
+          </li>
+          <li class="info-list-item">
+            <span class="label">Location {% if user.user_extension.location %}<a href="#">edit</a> {% else %}<a href="#">add</a>{% endif %}</span>
+            <span class="value">{{user.user_extension.location}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 class="heading">Security</h3>
+        <ul class="info-list">
+           <li class="info-list-item">
+            <span class="label">password <a href="#">change</a></span>
+            <span class="value"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% endblock main-content %}
