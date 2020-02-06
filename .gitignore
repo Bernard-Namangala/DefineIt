@@ -18,7 +18,7 @@ media
 media/
 # Backup files #
 *.bak
-
+DefineitPDFViewer/
 
 
 # If you are using PyCharm #
