@@ -16,6 +16,7 @@ def index_ajax(request):
     if request.is_ajax():
         word = request.GET['word']
         data = json.dumps(get_data(word))
+        print(data)
         return HttpResponse(data, content_type="application/json")
 
     else:
