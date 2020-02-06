@@ -369,4 +369,4 @@ $("body").on("click", function(e) {
 //show current year in footer
 let date = new Date().getFullYear();
 
-$("#footer-info").html("Copyright&copy; DefineIt " + date);
+$("#footer-info").html("&copy;Copyright DefineIt " + date);

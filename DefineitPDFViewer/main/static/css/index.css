@@ -2,7 +2,8 @@ html {
   height: 100%;
   width: 100%;
   /* Font size is needed to make the activity bar the correct size. */
-  font-size: 10px;
+  font-size:10px;
+
 }
 
 #upload-button {
@@ -21,10 +22,14 @@ body {
 
 nav {
   background-color: #33a1c9;
+  font-size:10px;
+
 }
+
 #navbar-holder {
   height: auto;
   background-color: #33a1c9;
+
 }
 #upload-btn {
   background-color: #ff8c00;
