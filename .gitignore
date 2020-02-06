@@ -1,14 +1,14 @@
 # Default ignored files
 /.idea/workspace.xml
-DefineitPDFViewer/main/static/css/images/
 fontawesome/
 bootstrap-4.4.1/
 jquery-3.4.1.js
 pdf.js
 pdf.js.map
 pdf.worker.js
+index.css
+index.js
 pdf.worker.js.map
-venv/
 # Django #
 *.log
 *.pot
